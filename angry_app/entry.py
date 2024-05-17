@@ -7,6 +7,9 @@ import click
 @click.option("--port", default=8000, help="Port to run the web app on")
 @click.option("--host", default="0.0.0.0", help="Host to run the web app on")
 def run(host, port):
+    """
+    ## Запуск приложения
+    """
     aiohttp.web.run_app(app, port=port, host=host)
 
 
